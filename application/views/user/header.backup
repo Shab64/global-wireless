@@ -1,0 +1,402 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Global Wireless</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="<?= base_url() ?>assets/website/img/favicon/favicon.ico">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/toast/jquery.toast.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+	<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+	<!--	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+	<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+	<!--	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+
+
+	<!-- CSS
+	  ========================= -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,800;0,900;1,700&display=swap" rel="stylesheet">
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="<?= base_url() ?>assets/website/css/plugin.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/website/css/review.css">
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="<?= base_url() ?>assets/website/css/style.css">
+	<!--	toast-->
+	<script src="<?= base_url() ?>assets/js/jquery-3.2.1.min.js"></script>
+
+
+
+	<style>
+		body h1 {
+			font-weight: 500 !important;
+		}
+
+		.my-img {
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
+		}
+
+		@media(max-width: 769px) {
+			.ftco-navbar-light .navbar-toggler {
+				display: none;
+			}
+
+			.searchform {
+				display: none;
+			}
+
+			.main_header {
+				padding-bottom: 0px;
+			}
+		}
+		.finish-loading{
+			display: none!important;
+		}
+		.loading-1{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			z-index: 99;
+			background: #fff;
+			display: grid;
+			place-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="loading-1">
+	<div style="text-align: center">
+	<img src="<?=base_url('images/mobile.gif')?>">
+	<!--<h3 style="color: #090C9B">Global CRM</h3>-->
+	</div>
+	</div>
+     <!--Offcanvas menu area start-->
+	<div class="off_canvars_overlay">
+
+	</div>
+	<div class="Offcanvas_menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="canvas_open">
+						<a href="javascript:void(0)"><i class="fas fa-bars"></i></a>
+					</div>
+					<div class="Offcanvas_menu_wrapper" style="background-color: #3B5999!important;color: white">
+						<div class="canvas_close">
+							<a href="javascript:void(0)"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+						</div>
+
+						<ul class="navbar-nav m-auto">
+							<li class="nav-item"><a href="<?= base_url('user') ?>" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="<?= base_url('user/view/products') ?>" class="nav-link">Products</a></li>
+							<li class="nav-item"><a href="<?= base_url('user/view/review') ?>" class="nav-link">Reviews</a></li>
+							<li class="nav-item"><a href="<?= base_url('user/view/contact') ?>" class="nav-link">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="<?= base_url('user/view/faq') ?>">FAQ</a></li>
+							<li class="nav-item"><a class="nav-link" href="<?= base_url('user/view/return') ?>">Return Policy</a></li>
+						</ul>
+						<div class="top_right text-right">
+							<ul>
+								<li><a href="<?= base_url('user/signin') ?>"> Login </a></li>
+								<li><a href="<?= base_url('user/checkout') ?>"> Checkout </a></li>
+							</ul>
+						</div>
+
+						<!--mini cart end-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Offcanvas menu area end-->
+
+	<!--header area start-->
+	<header>
+		<div class="main_header">
+			<!--header top start-->
+			<div class="header_top">
+
+				<div class="top_right text-right">
+					<ul>
+						<li style="font-size: small;color: papayawhip;float: left;margin-left: 250px"><a><?= date('F j, Y') ?></a></li>
+						<?php $user = $this->session->userdata('client_login'); 
+						if (isset($user)) { ?>
+							<li style="color: white; font-size: small;"><?= 'Welcome ' . ucfirst($user['name']); ?></li>
+							<!--<li><a style="color: white; font-size: small;" href="<?= site_url('user/view/my-subscriptions') ?>">My Subscriptions</a></li>-->
+							<li><a style="color: white; font-size: small;" href="<?= site_url('user/logout') ?>">Log out</a></li>
+						<?php } else { ?>
+							<li><a style="color: white; font-size: small;" href="<?= base_url('user/signin') ?>"> Log in <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+						<?php } ?>
+					
+						<li><a href="javascript:coid(0)" data-toggle="modal" data-target="#modalContactForm" style="color: white;">Request a Quote</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<!--header top start-->
+		<!--header middel start-->
+
+		<!--header middel end-->
+		<!--header bottom satrt-->
+		<nav class="navbar navbar-expand-sm navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+			<div class="container">
+				<div class="logo">
+					<a href="<?= base_url('user') ?>"><img src="<?= base_url('assets/website') ?>/img/logo/logo.jpg" alt=""></a>
+				</div>
+				<form action="#" class="searchform order-sm-start order-lg-last">
+					<div style=" margin-top: 15px;" class="form-group d-flex">
+						<input type="text" onkeyup="search_()" class="form-control pl-3" name="search" id="search_data" placeholder="Search ..">
+						<div>
+							<ul id="searchResult" style="position: absolute;
+    background: #fff;
+    min-height: 50px;
+    width: 19%;
+    left: 1048px;
+    top: 78px;
+    border-radius: 11px;
+    border: 1px solid #E5E5E5;
+    list-style: none;
+    display: none;
+    z-index: 999;
+"></ul>
+						</div>
+						<button type="submit" class="form-control search"><span class="fa fa-search"></span></button>
+					</div>
+				</form>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="fa fa-bars"></span> Menu
+				</button>
+				<div class="collapse navbar-collapse" id="ftco-nav">
+					<ul class="navbar-nav m-auto">
+						<li class="nav-item"><a href="<?= base_url('user') ?>" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="<?= base_url('user/view/products') ?>" class="nav-link">Products</a></li>
+						<!-- <li class="nav-item"><a href="</?= base_url('user/view/my-subscriptions') ?>" class="nav-link">My Subscriptions</a></li> -->
+						<li class=" nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown04">
+								<a class="dropdown-item" href="<?= base_url('user/view/business') ?>">Business</a>
+								<a class="dropdown-item" href="<?= base_url('user/view/residential') ?>">Residential</a>
+							</div>
+						</li>
+						<li class="nav-item"><a href="<?= base_url('user/view/review') ?>" class="nav-link">Reviews</a></li>
+						</li>
+						<li class="nav-item"><a href="<?= base_url('user/blogs') ?>" class="nav-link">Blogs</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown04">
+								<a class="dropdown-item" href="<?= base_url('user/view/faq') ?>">FAQ</a>
+								<a class="dropdown-item" href="<?= base_url('user/view/return') ?>">Return Policy</a>
+								<a class="dropdown-item" href="<?= base_url('user/view/contact') ?>">Contact Us</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<?php $cart = $this->cart->contents();
+			$total = 0; ?>
+			<div class="middel_right_info">
+				<a style="margin-right: 20px;font-size: 20px;position:relative " title="Wishlist" href="<?= base_url('user/view/wishlist') ?>"><i style="color:#090C9B;" class="fa fa-heart-o"></i></a>
+				<span style="position: absolute;background: white;font-weight: bolder; color: #3a87ad;font-size:10px; padding: 0px 7px;border-radius: 50%;top: 15px	;right: 125px"><?= (!empty($wishlist)) ? count($wishlist) : 0 ?></span>
+				<div class="mini_cart_wrapper" style="position: relative">
+					<a style="margin-right: 100px;position: relative" href="<?= base_url('user/view/cart') ?>"><i style="color:#090C9B;" class="fas fa-shopping-cart" title="shopping cart"></i></a>
+					<span style="position: absolute;background: white;font-size:10px;color:#3a87ad;font-weight: bolder;margin: 0px; padding: 0px 7px;border-radius: 50%;top: -15px;right: 83px"><?= (!empty($cart)) ? count($cart) : ((!empty($cart_data)) ? count($cart_data)  : 0) ?></span>
+
+					<!--mini cart-->
+					<?php if (!empty($cart)) { ?>
+						<div class="mini_cart">
+							<?php foreach ($cart as $value) { ?>
+								<div class="cart_item">
+									<div class="cart_img">
+										<a href="#"><img src="<?= base_url('uploads/' . $value['options']['image']) ?>" alt=""></a>
+									</div>
+									<div class="cart_info">
+										<a href="#"><?= $value['name'] ?></a>
+										<p>Qty: <?= $value['qty'] ?> X <span> <?= $value['price'] . '$' ?> </span></p>
+									</div>
+									<?php $total += $value['qty'] * $value['price']; ?>
+									<div class="cart_remove">
+										<a href="#"><i class="ion-android-close"></i></a>
+									</div>
+								</div>
+							<?php } ?>
+							<div class="mini_cart_table">
+								<div class="cart_total">
+									<span>Sub total:</span>
+									<span class="price"><?= $total . '$' ?></span>
+								</div>
+								<div class="cart_total mt-10">
+									<span>total:</span>
+									<span class="price"><?= $total . '$' ?></span>
+								</div>
+							</div>
+
+							<div class="mini_cart_footer">
+								<div class="cart_button">
+									<a href="<?= base_url('user/view/cart') ?>">View cart</a>
+								</div>
+								<div class="cart_button">
+									<a href="<?= base_url('user/checkout') ?>">Checkout</a>
+								</div>
+
+							</div>
+
+						</div>
+					<?php } ?>
+		</nav>
+
+		<!--header bottom end-->
+
+	</header>
+	<!--header area end-->
+
+	<!--sticky header area start-->
+	<div class="sticky_header_area sticky-header" style="background:white">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-3">
+					<div class="logo">
+						<a href="<?= base_url('user') ?>"><img src="<?= base_url('assets/website/img/logo/logo.jpg') ?>" alt=""></a>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="sticky_header_right menu_position">
+						<div class="main_menu">
+							<nav class="navbar navbar-expand-sm navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+								<div class="container">
+
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="fa fa-bars"></span> Menu
+									</button>
+									<div class="collapse navbar-collapse" id="ftco-nav">
+										<ul class="navbar-nav m-auto">
+											<li class="nav-item"><a href="<?= base_url('user') ?>" class="nav-link">Home</a>
+											</li>
+											<li class="nav-item"><a href="<?= base_url('user/view/products') ?>" class="nav-link">Products</a></li>
+											<!--<li class="nav-item"><a href="<?= base_url('user/view/my-subscriptions') ?>" class="nav-link">My Subscriptions</a></li>-->
+											<li class=" nav-item dropdown">
+												<a href="#" class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+												<div class="dropdown-menu" aria-labelledby="dropdown04">
+													<a class="dropdown-item" href="<?= base_url('user/view/business') ?>">Business</a>
+													<a class="dropdown-item" href="<?= base_url('user/view/residential') ?>">Residential</a>
+												</div>
+											</li>
+
+											<li class="nav-item"><a href="<?= base_url('user/view/review') ?>" class="nav-link">Reviews</a></li>
+											<li class="nav-item"><a href="<?= base_url('user/view/contact') ?>" class="nav-link">Contact</a></li>
+											<li class=" nav-item dropdown">
+												<a href="#" class="nav-link dropdown-toggle" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Help</a>
+												<div class="dropdown-menu" aria-labelledby="dropdown04">
+													<a class="dropdown-item" href="<?= base_url('user/view/faq') ?>">FAQ</a>
+													<a class="dropdown-item" href="<?= base_url('user/return') ?>">Return Policy</a>
+												</div>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header" style="background: #090C9B;color: white;">
+					<h5 class="modal-title" id="exampleModalLabel">Request a Quote</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="left:92%;border:0px!important">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form id="contact-form" method="POST" action="<?= site_url('user/contact') ?>" id="request_a_quote">
+					<div class="modal-body mx-3">
+						<p id="required"></p>
+						<div class="md-form mb-2">
+							<i class="fas fa-user prefix grey-text"></i> <label data-error="wrong" data-success="right" for="form34">Name</label>
+							<input type="text" id="form34" class="form-control " name="name" required>
+							
+						</div>
+
+						<div class="md-form mb-2">
+							<i class="fas fa-envelope prefix grey-text"></i> <label data-error="wrong" data-success="right" for="form29">Email</label>
+							<input type="email" id="form29" class="form-control " name="email" required>
+							
+						</div>
+
+						<div class="md-form mb-2">
+							<i class="fas fa-tag prefix grey-text"></i> <label data-error="wrong" data-success="right" for="form32">Phone</label>
+							<input type="number" id="form32" class="form-control " name="phone" required>
+							
+						</div>
+
+						<div class="md-form mb-2">
+							<i class="fa fa-pencil prefix grey-text"></i> <label data-error="wrong" data-success="right" for="form8">Your message</label>
+							<textarea type="text" id="form8" name="message" class="md-textarea form-control" rows="6" required></textarea>
+							
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button style="background-color: #090C9B; color: white;" type="button" class="btn btn-unique" id="request-quote">Request</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!--sticky header area end-->
+	<script>
+		function search_() {
+			let search = $("#search_data").val();
+			if (search.length > 0) {
+				$.post("<?= site_url('user/search_data') ?>", {
+					search
+				}, function(e) {
+					$("#searchResult").css('display', 'block')
+					$("#searchResult").html(e)
+				})
+			} else {
+				$("#searchResult").css('display', 'none')
+				$("#search_data").html('<p style="color: red">Write something to search .. </p>');
+			}
+
+		}
+		$("#request-quote").click(function(e) {
+			e.preventDefault();
+			var formObj = {};
+			var inputs = $('#request_a_quote').serializeArray()
+			console.log(inputs)
+			$.each(inputs, function(i, input) {
+				formObj[input.name] = input.value;
+			});
+			console.log(formObj)
+			if (formObj.name.length > 0 && formObj.email.length > 0 && formObj.phone.length > 0 && formObj.message.length > 0) {
+				$.post("<?= site_url('user/contact/quote') ?>", {
+					ajaxform: formObj
+				}, function(e) {
+					$("#request_a_quote").submit();
+				})
+			} else {
+				$("#required").html('All fields are required');
+			}
+		})
+	</script>

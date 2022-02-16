@@ -1,0 +1,335 @@
+
+
+
+.img-fluid {
+    width: 300px;
+    height: auto;
+	margin-left:-22px;
+}
+
+
+input.form-control {
+    padding-bottom: 20px;
+}
+
+.col-md-2.mt-4 {
+    display: none;
+}
+
+.hero-title {
+     display:none!important;
+}
+
+
+
+h1 {
+    font-size: 60px;
+    font-family: helvetica;
+}
+
+.pr-5 {
+    padding-right: 3rem!important;
+    min-width: 20%!important;
+}
+
+
+.myNavBar li a{
+    font-weight: bold;
+}
+
+/*.hero-wrap{*/
+    /*min-height: 800px !important;*/
+/*}*/
+
+.hero-title h1{
+    font-weight: bold;
+    color: #000;
+}
+
+.hero-title h3, .popular-link-wrap  h3{
+    color: #2d2d2d !important;
+    font-weight: 300;
+	font-size: 24px;
+}
+
+.hero-title .greenColor, .greenColor{
+    color: #01C54B !important;
+}
+
+
+.myLabelSelect label{
+    font-weight: bold;
+    color: #000;
+    text-align: left!important;
+    padding-left: 16px;
+}
+
+.myLabelSelect select.form-control, .myLabelSelect input.form-control{
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.myLabelSelect select.form-control:focus{
+
+    border-bottom: 1px solid #01C54B;
+}
+
+.myLabelSelect  select, .myLabelSelect  input{
+    background: #fff0;
+    color: black;
+    font-size: 13px !important;
+}
+
+.btn-my{
+    background: #01C54B;
+    color: #fff;
+    padding: 15px 32px 15px 32px!important;
+}
+
+.iconsWithDesc i{
+    color: #01C54B;
+    font-size:  80px;
+    text-align: center;
+}
+
+.location{
+    margin-top: 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform:uppercase;
+    font-family: helvetica;
+    padding-top:8px;
+    padding-bottom: 8px;
+    
+
+}
+
+.details{
+    color: #2d2d2d;
+    font-size: 13px;
+    font-weight:200;
+    text-align:left!important;
+
+}
+
+.myDein span{
+    font-size: 10px;
+
+    color: #ccc;
+}
+
+.smallDetail{
+    font-size: 12px;
+    color: #ccc;
+}
+
+.smallDetailPara{
+    font-size: 14px;
+}
+
+.personen{
+    font-size: 12px ;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+.bg-dark{
+    background: #000 !important;
+}
+
+.font15{
+    font-size: 15px;
+    color: #018632;
+    padding-left: 17px;
+}
+
+
+.myCustomDarkBtn{
+    background: #000;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+}
+
+.myCustomWhiteBtn{
+    background: #ccc;
+    color: #000;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+
+
+}
+
+.textBlack{
+    color: #000;
+    font-weight: bold;
+
+}
+
+/*.myBGImage{*/
+/*    background: url("../images/listing-thumb-2.jpg");*/
+/*    background-position:center center ;*/
+/*    background-repeat: no-repeat;*/
+
+/*    background-size: cover;*/
+/*    height: 300px;*/
+/*}*/
+
+
+
+/*.myBGImage2{*/
+/*    background: url("../images/listing-thumb-5.jpg");*/
+/*    background-position:center center ;*/
+/*    background-repeat: no-repeat;*/
+
+/*    background-size: cover;*/
+/*    height: 180px;*/
+/*}*/
+
+
+.customPadding{
+    padding-top: 129px;
+    padding-right: 27px;
+
+}
+
+.border-top{
+    border-top: 1px solid #ccc ;
+}
+
+.getRight{
+    font-size: 22px;
+    color: #000;
+}
+
+.innerHeads{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.innerDesc{
+    font-size: 12px;
+    color: #ccc;
+}
+
+.myColorCard .card{
+    border: 1px solid #01C54B !important;
+}
+
+.greenColorCard{
+    border: 1px solid #01C54B !important;
+}
+
+
+.textBlack2{
+    color: #000 !important;
+    font-size: 14px;
+    font-weight: bold !important;
+}
+
+.textGray{
+    color: #ccc !important;
+    font-size: 14px;
+}
+
+.myCustomCard{
+    border: 1px solid #ccc !important;
+}
+
+.grayColor{
+    color: #ccc !important;
+}
+
+.text12{
+    font-size: 12px !important;
+}
+
+.text14{
+    font-size: 14px !important;
+}
+
+
+.he .card .card-bottom .text12{
+    font-size: 12px !important;
+}
+
+
+.btn-link:focus, .btn-link:hover{
+    color: #01C54B !important;
+    text-decoration: none;
+}
+
+
+
+/*Sign In*/
+
+.centerItem{
+
+
+    display: grid !important;
+    place-items: center;
+    height: 100vh;
+
+
+
+}
+
+input:focus{
+    border-color: #01C54B !important;
+}
+
+.btn:hover{
+    color: #fff !important;
+}
+
+
+/**/
+
+@media (max-width: 780px) {
+
+    .myColorCard .col-md-6{
+        display: block;
+        max-width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+@media (max-width: 600px){
+    .myResp{
+        text-align: center !important;
+    }
+
+    .myResp .col-md-3 , .myResp .col-md-1{
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    .myResp .d-flex{
+        justify-content: center;
+    }
+
+    .timeline .events ul li a {
+        font-size: 8px !important;
+    }
+
+    .timeline .events ul li{
+        width: 15% !important;
+    }
+
+    .resp-2 .col-md-2{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+}
+

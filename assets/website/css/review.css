@@ -1,0 +1,152 @@
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.customerReviews {
+	border-radius: 20px;
+	background-color: #e6eeff !important;
+	padding: 35px;
+	margin: 0;
+	grid-column: 1/-1;
+	grid-row: 1/-2;
+	width: 98%;
+	margin-left: 13px;
+	margin-top: 20px;
+	height: 800px;
+	margin-bottom: 600px;
+
+}
+
+.coverage {
+
+	text-align: center;
+	font-size: 42px;
+	line-height: 44px;
+	font-family: 'Poppins', sans-serif;
+	color: #090C9B;
+	font-weight: 1000;
+	padding-bottom: 40px;
+}
+
+.o-centerArm-customerReviews .content .appendText, .content .score-value {
+	font-family: 'Poppins', sans-serif;
+	color: #4b4b4d;
+	font-weight: 400;
+	font-size: 16px;
+	/* line-height: 0px; */
+	width: 60px;
+	cursor: pointer;
+}
+
+
+.o-centerArm-customerReviews .content .distribution-row {
+	display: -ms-grid;
+	display: grid;
+	grid-template-areas: "a b c";
+	-ms-grid-columns: -webkit-max-content;
+	-ms-grid-columns: max-content;
+	grid-template-columns: -webkit-max-content;
+	grid-template-columns: max-content;
+	align-items: center;
+	margin-top: 5px;
+	grid-gap: 10px;
+	cursor: pointer;
+}
+
+.o-centerArm-customerReviews .content .distribution-bar {
+	height: 10px;
+	width: 93px;
+	background-color: #e5e5e5;
+	cursor: pointer;
+}
+.o-centerArm-customerReviews .content .bottomLineRating {
+	display: block;
+	padding: 0 15px;
+}
+
+.o-centerArm-customerReviews .content #distributionRow {
+	grid-area: c;
+	width: 215px;
+	/* margin: 30px auto; */
+}
+.o-centerArm-customerReviews .content .reviewRow {
+	margin-top: 50px;
+}
+.o-centerArm-customerReviews .content .distribution-bar-score {
+	background-color: #090C9B;
+	height: 10px;
+}
+
+.o-centerArm-customerReviews .content {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+
+	border: 1px solid #c8d9ff !important;
+	border-radius: 20px;
+	background-color: #fff;
+	grid-row: 2/-1;
+	grid-column: 1/-1;
+}
+
+
+.o-centerArm-customerReviews .content .bottomLineRating .rating-block .reviewStars {
+	background-image: url(https://cdn.mintmobile.com/wp-content/themes/mintmobile/v3/assets/images/star.svg);
+	background-repeat: repeat-x;
+	background-size: initial;
+	background-position: 0;
+	height: 26px;
+	display: inline-block;
+	margin-left: 15px;
+}
+.btn-grey{
+	background-color:#D8D8D8;
+	color:#FFF;
+}
+.rating-block{
+	padding-top: 100px;
+	padding-left: 250px;
+	padding-bottom: 100px;
+	font-family: 'Poppins', sans-serif;
+	color: #090C9B;
+}
+.bold{
+	font-weight:700;
+}
+.padding-bottom-7{
+	padding-bottom:7px;
+}
+
+.review-block{
+	background-color:#FAFAFA;
+	border:1px solid #EFEFEF;
+	padding:15px;
+	border-radius:3px;
+	margin-bottom:15px;
+
+}
+.review-block-name span{
+	font-size:20px;
+	margin-left: 25px;
+	font-weight: 500;
+}
+.review-block-date{
+	font-size:12px;
+	margin-left: 25px;
+	font-weight: 500;
+}
+.review-block-rate .fa-star{
+	font-size: 20px;
+	margin-bottom:15px;
+}
+.review-block-rate .fa-star-o{
+	font-size: 20px;
+	margin-bottom:15px;
+}
+.review-block-title{
+	font-size:20px;
+	font-weight:600;
+	margin-bottom: 20px;
+}
+.review-block-description{
+	font-size: 15px;
+}
+
